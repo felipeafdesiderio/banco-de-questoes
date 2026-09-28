@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ds-canvas: 248 250 252;
+    --ds-surface: 255 255 255;
+    --ds-card: 255 255 255;
+    --ds-line: 226 232 240;
+    --ds-title: 15 23 42;
+    --ds-muted: 71 85 105;
+    --ds-accent: 37 99 235;
+    --ds-highlight: 29 78 216;
+    --ds-ink: 241 245 249;
+  }
+
+  .dark {
+    --ds-canvas: 2 6 23;
+    --ds-surface: 15 23 42;
+    --ds-card: 15 23 42;
+    --ds-line: 30 41 59;
+    --ds-title: 248 250 252;
+    --ds-muted: 148 163 184;
+    --ds-accent: 37 99 235;
+    --ds-highlight: 59 130 246;
+    --ds-ink: 15 23 42;
+  }
+
+  html {
+    @apply font-sans antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    @apply bg-canvas text-muted;
+  }
+}
