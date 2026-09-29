@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Tri�ngulo ret�ngulo">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <polygon points="40,160 240,160 40,40" fill="none" stroke="#3b82f6" stroke-width="3"/>
+  <text x="130" y="175" fill="#94a3b8" font-size="14">6 cm</text>
+  <text x="20" y="105" fill="#94a3b8" font-size="14" transform="rotate(-90 20 105)">8 cm</text>
+  <text x="120" y="90" fill="#e2e8f0" font-size="14">?</text>
+</svg>
