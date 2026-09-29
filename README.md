@@ -240,10 +240,31 @@ npm run db:push     # aplicar migrations no projeto linkado
 |--------|-----------|
 | `npm run dev` | Vite dev server + HMR |
 | `npm run build` | `tsc -b` + bundle de produção em `dist/` |
+| `npm run build:gh-pages` | Build com `base` `/banco-de-questoes/` para GitHub Pages |
 | `npm run preview` | Servir build local |
+| `npm run typecheck` | TypeScript (`tsc -b`) sem emitir arquivos |
 | `npm run lint` | Oxlint no código |
 | `npm run db:push` | Push de migrations Supabase |
 | `npm run db:status` | Status das migrations |
+
+### Deploy (Vercel — recomendado)
+
+1. Importe o repositório na [Vercel](https://vercel.com) (framework **Vite** detectado via `vercel.json`).
+2. Configure **Environment Variables** (Production e Preview):
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+   - `VITE_MOCK_AUTH=true` (já sugerido no `vercel.json` para conta demo; desative em produção real se preferir)
+3. Build: `npm run build` · Output: `dist` · Rewrites SPA já definidos em `vercel.json`.
+
+**Conta demo (mock):** `teste@pmesp.com` / `Teste123!` — requer `VITE_MOCK_AUTH=true` no build.
+
+### Deploy (GitHub Pages)
+
+1. Em **Settings → Pages**, source **GitHub Actions**.
+2. Secrets do repositório: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
+3. Push em `main` dispara `.github/workflows/github-pages.yml` (`npm run build:gh-pages`).
+
+> **Nota:** este projeto é **Vite + React (SPA)**, não Next.js. Não há `next.config` — use `vite.config.ts` e `vercel.json`.
 
 ---
 

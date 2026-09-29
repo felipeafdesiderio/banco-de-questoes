@@ -1,4 +1,5 @@
-import { BrowserRouter } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, useNavigate } from 'react-router-dom'
 
 import { Footer } from './components/footer/footer'
 import { Header } from './components/header/header'
@@ -37,9 +38,32 @@ function AppShell() {
   )
 }
 
+/** Restaura rota após fallback 404.html no GitHub Pages. */
+function GitHubPagesSpaRedirect() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const stored = sessionStorage.getItem('gh-pages-redirect')
+    if (!stored) {
+      return
+    }
+    sessionStorage.removeItem('gh-pages-redirect')
+    navigate(stored.startsWith('/') ? stored : `/${stored}`, { replace: true })
+  }, [navigate])
+
+  return null
+}
+
 function AppWithRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        import.meta.env.BASE_URL === '/'
+          ? undefined
+          : import.meta.env.BASE_URL.replace(/\/$/, '')
+      }
+    >
+      <GitHubPagesSpaRedirect />
       <AuthProvider>
         <CareerProvider>
           <AppShell />
