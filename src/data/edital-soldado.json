@@ -1,0 +1,367 @@
+{
+  "cargo": "Soldado PMESP",
+  "totalDisciplinas": 7,
+  "disciplinas": [
+    {
+      "id": "lingua-portuguesa",
+      "nome": "Língua Portuguesa",
+      "icone": "BookOpen",
+      "topicos": [
+        {
+          "id": "lp-1",
+          "nome": "1. Leitura e interpretação de diversos tipos de textos (literários e não literários)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 45
+        },
+        {
+          "id": "lp-2",
+          "nome": "2. Sinônimos e antônimos",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "lp-3",
+          "nome": "3. Sentido próprio e figurado das palavras",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "lp-4",
+          "nome": "4. Pontuação",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "lp-5",
+          "nome": "5. Classes de palavras (substantivo, adjetivo, pronome, verbo, advérbio, preposição, conjunção)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 60
+        },
+        {
+          "id": "lp-6",
+          "nome": "6. Concordância verbal e nominal",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        },
+        {
+          "id": "lp-7",
+          "nome": "7. Regência verbal e nominal",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "lp-8",
+          "nome": "8. Colocação pronominal",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "lp-9",
+          "nome": "9. Crase",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        }
+      ]
+    },
+    {
+      "id": "matematica",
+      "nome": "Matemática",
+      "icone": "Calculator",
+      "topicos": [
+        {
+          "id": "mat-1",
+          "nome": "1. Números inteiros: operações e propriedades",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "mat-2",
+          "nome": "2. Números racionais, representação fracionária e decimal",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "mat-3",
+          "nome": "3. Mínimo múltiplo comum (MMC)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "mat-4",
+          "nome": "4. Razão e proporção",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "mat-5",
+          "nome": "5. Porcentagem",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        },
+        {
+          "id": "mat-6",
+          "nome": "6. Regra de três simples",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "mat-7",
+          "nome": "7. Média aritmética simples",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "mat-8",
+          "nome": "8. Equação do 1º grau",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 28
+        },
+        {
+          "id": "mat-9",
+          "nome": "9. Sistema de equações do 1º grau",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "mat-10",
+          "nome": "10. Sistema métrico (tempo, comprimento, superfície e capacidade)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "mat-11",
+          "nome": "11. Relação entre grandezas: tabelas e gráficos",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "mat-12",
+          "nome": "12. Noções de geometria (perímetro, área, volume, Teorema de Pitágoras)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 32
+        },
+        {
+          "id": "mat-13",
+          "nome": "13. Raciocínio lógico",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "mat-14",
+          "nome": "14. Resolução de situações-problema",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 50
+        }
+      ]
+    },
+    {
+      "id": "historia",
+      "nome": "História (Geral e do Brasil)",
+      "icone": "Landmark",
+      "topicos": [
+        {
+          "id": "hist-1",
+          "nome": "1.1. Primeira Guerra Mundial",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "hist-2",
+          "nome": "1.2. O nazifascismo e a Segunda Guerra Mundial",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "hist-3",
+          "nome": "1.3. A Guerra Fria",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "hist-4",
+          "nome": "1.4. Globalização e as políticas neoliberais",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 12
+        },
+        {
+          "id": "hist-5",
+          "nome": "2.1. A Revolução de 1930 e a Era Vargas",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "hist-6",
+          "nome": "2.2. As Constituições Republicanas",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "hist-7",
+          "nome": "2.3. A estrutura política e movimentos sociais no período militar",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "hist-8",
+          "nome": "2.4. A abertura política e a redemocratização do Brasil",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "geografia",
+      "nome": "Geografia (Geral e do Brasil)",
+      "icone": "Globe",
+      "topicos": [
+        {
+          "id": "geo-1",
+          "nome": "3.1. A nova ordem mundial, espaço geopolítico e globalização",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "geo-2",
+          "nome": "3.2. Os principais problemas ambientais",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "geo-3",
+          "nome": "4.1. Natureza brasileira (relevo, hidrografia, clima e vegetação)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "geo-4",
+          "nome": "4.2. População: crescimento, distribuição, estrutura e movimentos",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "geo-5",
+          "nome": "4.3. Atividades econômicas: industrialização, urbanização, energia e agropecuária",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 28
+        },
+        {
+          "id": "geo-6",
+          "nome": "4.4. Os impactos ambientais no Brasil",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "atualidades",
+      "nome": "Atualidades",
+      "icone": "Newspaper",
+      "topicos": [
+        {
+          "id": "atu-1",
+          "nome": "Fatos políticos, econômicos, sociais e culturais (nacionais e internacionais dos últimos 6 meses)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        }
+      ]
+    },
+    {
+      "id": "informatica",
+      "nome": "Noções Básicas de Informática",
+      "icone": "Monitor",
+      "topicos": [
+        {
+          "id": "inf-1",
+          "nome": "1. MS-Windows 10 (pastas, arquivos, atalhos, MS-Office 2016)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "inf-2",
+          "nome": "2. MS-Word 2016 (edição, formatação, tabelas, quebras)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "inf-3",
+          "nome": "3. MS-Excel 2016 (planilhas, fórmulas, funções, gráficos)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "inf-4",
+          "nome": "4. MS-PowerPoint 2016 (slides, animações, transições)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "inf-5",
+          "nome": "5. Correio Eletrônico (envio, preparo, anexos)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "inf-6",
+          "nome": "6. Internet (URL, links, busca e navegação)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "inf-7",
+          "nome": "7. Ambientes Google Workspace (Gmail, Drive, Docs, Sheets, Meet)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "inf-8",
+          "nome": "8. Microsoft Teams (chats, chamadas, trabalho colaborativo)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "administracao-publica",
+      "nome": "Noções de Administração Pública",
+      "icone": "ShieldAlert",
+      "topicos": [
+        {
+          "id": "adm-1",
+          "nome": "1.1. CF/88 - Direitos e Deveres Individuais e Coletivos (Art. 5º) e Direitos Políticos",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 50
+        },
+        {
+          "id": "adm-2",
+          "nome": "1.2. CF/88 - Administração Pública e Dos Militares dos Estados",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "adm-3",
+          "nome": "1.3. CF/88 - Da Segurança Pública (Art. 144)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        },
+        {
+          "id": "adm-4",
+          "nome": "2.1. CE/SP - Poder Executivo, Judiciário e Justiça Militar do Estado",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "adm-5",
+          "nome": "2.2. CE/SP - Servidores Públicos Civis, Militares e Segurança Pública (Polícia Militar)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "adm-6",
+          "nome": "3. Lei Federal nº 12.527/11 (LAI) e Decreto Estadual nº 68.155/23",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    }
+  ]
+}

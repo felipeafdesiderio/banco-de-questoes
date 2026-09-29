@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Banco de Questões</title>
+    <script>
+      ;(function () {
+        var base = '/banco-de-questoes/'
+        var path = location.pathname.replace(base, '') + location.search + location.hash
+        sessionStorage.setItem('gh-pages-redirect', path || '/')
+        location.replace(base)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>
