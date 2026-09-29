@@ -253,10 +253,9 @@ npm run db:push     # aplicar migrations no projeto linkado
 2. Configure **Environment Variables** (Production e Preview):
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
-   - `VITE_MOCK_AUTH=true` (já sugerido no `vercel.json` para conta demo; desative em produção real se preferir)
 3. Build: `npm run build` · Output: `dist` · Rewrites SPA já definidos em `vercel.json`.
-
-**Conta demo (mock):** `teste@pmesp.com` / `Teste123!` — requer `VITE_MOCK_AUTH=true` no build.
+4. No Supabase (**Authentication → URL Configuration**), inclua a URL do deploy em **Site URL** e **Redirect URLs** (necessário para Google OAuth).
+5. Em **Authentication → Providers**, habilite **Google** com Client ID/Secret do Google Cloud Console.
 
 ### Deploy (GitHub Pages)
 

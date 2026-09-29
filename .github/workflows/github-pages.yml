@@ -32,7 +32,6 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-          VITE_MOCK_AUTH: 'true'
           VITE_BASE_PATH: /banco-de-questoes/
 
       - uses: actions/upload-pages-artifact@v3

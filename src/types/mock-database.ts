@@ -1,7 +1,6 @@
-import type { UserRole } from './database'
-import type { CargoConcurso, EditalMapa } from './edital'
+import type { EditalMapa } from './edital'
 import type { TopicMaterial } from './materials'
-import type { Question, QuestionAttempt, QuestionDifficulty, QuestionResolution } from './questions'
+import type { Question, QuestionDifficulty, QuestionResolution } from './questions'
 
 /** Questão persistida no JSON — campos derivados preenchidos em runtime via normalizeQuestion */
 export type StoredQuestion = Omit<Question, 'code' | 'difficulty' | 'resolution'> & {
@@ -29,7 +28,6 @@ export type MockDatabaseFile = {
   topicMaterials: Record<string, TopicMaterial[]>
   questions: Record<string, StoredQuestion>
   questionIdsByTopico: Record<string, string[]>
-  testAccount?: MockTestAccount
   userStateSchema: {
     questions?: string
     questionAttempts: 'Record<questionId, { result, answeredAt }>'
@@ -37,21 +35,6 @@ export type MockDatabaseFile = {
     careerSelection: 'soldado | oficial'
     editalProgress: 'topicoId[]'
   }
-}
-
-export type MockTestAccount = {
-  id: string
-  email: string
-  password: string
-  profile: {
-    full_name: string
-    cpf: string
-    role: UserRole
-  }
-  nomeGuerra: string
-  career: CargoConcurso
-  editalProgressSoldado: string[]
-  questionAttempts: Record<string, QuestionAttempt>
 }
 
 export type MockDatabase = MockDatabaseFile & {

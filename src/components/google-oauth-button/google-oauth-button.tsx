@@ -17,10 +17,13 @@ export function GoogleOauthButton({
   async function handleGoogleSignIn() {
     onStart?.()
 
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+    const redirectTo = `${window.location.origin}${base}`
+
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: window.location.origin,
+        redirectTo,
       },
     })
 

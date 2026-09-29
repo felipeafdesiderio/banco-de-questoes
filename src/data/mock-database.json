@@ -208,36 +208,5 @@
     "studentProfile": "nomeGuerra, avatarDataUrl, customApprovals, stats",
     "careerSelection": "soldado | oficial",
     "editalProgress": "topicoId[]"
-  },
-  "testAccount": {
-    "id": "00000000-0000-4000-a000-000000000001",
-    "email": "teste@pmesp.com",
-    "password": "Teste123!",
-    "profile": {
-      "full_name": "SD PM TESTE",
-      "cpf": "52998224725",
-      "role": "student"
-    },
-    "nomeGuerra": "SD PM TESTE",
-    "career": "soldado",
-    "editalProgressSoldado": ["lp-1", "mat-12", "geo-3"],
-    "questionAttempts": {
-      "lp-1-q1": {
-        "result": "correct",
-        "answeredAt": "2026-09-28T14:20:00.000-03:00"
-      },
-      "lp-1-q2": {
-        "result": "wrong",
-        "answeredAt": "2026-09-27T09:45:00.000-03:00"
-      },
-      "mat-12-q1": {
-        "result": "wrong",
-        "answeredAt": "2026-09-26T18:10:00.000-03:00"
-      },
-      "geo-3-q1": {
-        "result": "correct",
-        "answeredAt": "2026-09-24T11:30:00.000-03:00"
-      }
-    }
   }
 }
