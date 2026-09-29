@@ -1,6 +1,8 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { LogIn, Mail } from 'lucide-react'
 import { useState } from 'react'
+
+import { useAuth } from '../../hooks/use-auth'
 import { useForm } from 'react-hook-form'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
@@ -14,10 +16,14 @@ import {
   fieldErrorClass,
 } from '../../lib/form-styles'
 import { linkAccent } from '../../lib/ui-styles'
+import { getPostAuthPath } from '../../lib/career-labels'
+import { hasStoredCareer } from '../../lib/career-storage'
+import { getMockTestAccount, isMockAuthEnabled, mockSignIn } from '../../lib/mock-auth'
 import { supabase } from '../../lib/supabase'
 import { loginSchema, type LoginFormValues } from './login-schema'
 
 export function Login() {
+  const { establishMockSession } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const successMessage =
@@ -40,6 +46,24 @@ export function Login() {
   async function onSubmit(values: LoginFormValues) {
     setFormError(null)
 
+    const from = (location.state as { from?: { pathname?: string } } | null)?.from
+      ?.pathname
+
+    if (isMockAuthEnabled()) {
+      const session = mockSignIn(values.email, values.password)
+      if (session) {
+        establishMockSession()
+        navigate(getPostAuthPath(hasStoredCareer(), from ?? '/estudar'))
+        return
+      }
+
+      const testEmail = getMockTestAccount().email.trim().toLowerCase()
+      if (values.email.trim().toLowerCase() === testEmail) {
+        setFormError('E-mail ou senha incorretos.')
+        return
+      }
+    }
+
     const { error } = await supabase.auth.signInWithPassword({
       email: values.email,
       password: values.password,
@@ -50,7 +74,7 @@ export function Login() {
       return
     }
 
-    navigate('/')
+    navigate(getPostAuthPath(hasStoredCareer(), from ?? '/estudar'))
   }
 
   return (

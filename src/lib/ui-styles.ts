@@ -9,6 +9,10 @@ export const shadowSoftLg = 'shadow-soft-lg'
 
 export const cardBase = `rounded-[1.125rem] border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 ${shadowSoft}`
 
+/** Radios/checkboxes do painel de filtros (tema dark/blue) */
+export const filterChoiceInputClass =
+  'filter-choice-input h-4 w-4 shrink-0 cursor-pointer border border-slate-700 bg-slate-900 text-blue-600 accent-blue-600 focus:ring-2 focus:ring-blue-500/30 focus:ring-offset-2 focus:ring-offset-slate-950'
+
 export const badgeClass = `inline-flex w-fit max-w-full items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:border-blue-800/60 dark:bg-blue-950/60 dark:text-blue-300 ${transition} hover:border-blue-300 dark:hover:border-blue-700`
 
 const btnPrimaryCore = `inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-blue-950/50 ${transition} hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 dark:hover:bg-blue-500`

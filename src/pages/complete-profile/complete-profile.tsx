@@ -9,6 +9,8 @@ import { CpfField } from '../../components/cpf-field/cpf-field'
 import { useAuth } from '../../hooks/use-auth'
 import { stripCpf } from '../../lib/cpf'
 import { authSubmitClass } from '../../lib/form-styles'
+import { getPostAuthPath } from '../../lib/career-labels'
+import { hasStoredCareer } from '../../lib/career-storage'
 import { supabase } from '../../lib/supabase'
 import {
   completeProfileSchema,
@@ -53,7 +55,7 @@ export function CompleteProfile() {
     }
 
     await refreshProfile()
-    navigate('/')
+    navigate(getPostAuthPath(hasStoredCareer(), '/estudar'))
   }
 
   if (loading) {

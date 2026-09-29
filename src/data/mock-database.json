@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "meta": {
+    "description": "Mock database — editais em edital-soldado.json e edital-oficial.json; demais entidades neste arquivo.",
+    "editalSources": ["edital-soldado.json", "edital-oficial.json"],
+    "questionEntitySchema": {
+      "code": "Identificador único para exibição e suporte (ex.: Q-1042, PM-2024-001)",
+      "difficulty": "Fácil | Médio | Difícil",
+      "resolution": {
+        "text": "Gabarito comentado em texto/markdown (opcional)",
+        "videoUrl": "URL YouTube/Vimeo da aula explicativa (opcional)"
+      }
+    }
+  },
+  "topicMaterials": {
+    "lp-1": [
+      {
+        "id": "lp-1-yt-1",
+        "type": "youtube",
+        "title": "Leitura e interpretação — aula completa",
+        "url": "https://youtube.com/watch?v=mock-lp-1"
+      }
+    ],
+    "lp-2": [
+      {
+        "id": "lp-2-yt-1",
+        "type": "youtube",
+        "title": "Sinônimos e antônimos — revisão PMESP",
+        "url": "https://youtube.com/watch?v=mock-lp-2"
+      },
+      {
+        "id": "lp-2-pdf-1",
+        "type": "pdf",
+        "title": "Resumo em PDF — Vocabulário",
+        "url": "/materials/resumo-vocabulario.pdf"
+      }
+    ],
+    "adm-1": [
+      {
+        "id": "adm-1-yt-1",
+        "type": "youtube",
+        "title": "Art. 5º CF/88 — videoaula",
+        "url": "https://youtube.com/watch?v=mock-adm-1"
+      },
+      {
+        "id": "adm-1-pdf-1",
+        "type": "pdf",
+        "title": "Mapa mental — Direitos Fundamentais",
+        "url": "/materials/mapa-art5.pdf"
+      },
+      {
+        "id": "adm-1-ext-1",
+        "type": "external_link",
+        "title": "Planalto — Constituição Federal",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+        "id": "adm-1-paid-1",
+        "type": "paid_course",
+        "title": "Curso Intensivo CF/88 — PMESP",
+        "url": "https://example.com/curso-cf88",
+        "description": "Indicação parceira com trilha focada em Soldado e Oficial PMESP."
+      }
+    ],
+    "mat-12": [
+      {
+        "id": "mat-12-yt-1",
+        "type": "youtube",
+        "title": "Geometria — área e volume",
+        "url": "https://youtube.com/watch?v=mock-mat-12"
+      }
+    ],
+    "geo-3": [
+      {
+        "id": "geo-3-ext-1",
+        "type": "external_link",
+        "title": "IBGE — Relevo brasileiro",
+        "url": "https://www.ibge.gov.br/"
+      }
+    ]
+  },
+  "questions": {
+    "lp-1-q1": {
+      "id": "lp-1-q1",
+      "code": "Q-1042",
+      "topicoId": "lp-1",
+      "banca": "VUNESP",
+      "ano": 2023,
+      "orgaoCargo": "PMESP - Soldado",
+      "difficulty": "Médio",
+      "enunciado": "Leia o trecho: \"A leitura interpretativa exige atenção ao contexto e à intenção do autor.\" Assinale a alternativa que melhor define interpretação textual.",
+      "alternativas": [
+        { "key": "A", "text": "Reproduzir o texto sem análise." },
+        { "key": "B", "text": "Inferir sentidos a partir do contexto e das pistas linguísticas." },
+        { "key": "C", "text": "Decorar sinônimos isolados." },
+        { "key": "D", "text": "Ignorar o gênero textual." },
+        { "key": "E", "text": "Substituir palavras por antônimos." }
+      ],
+      "correta": "B",
+      "gabaritoComentado": "Interpretação envolve construir sentido com base no contexto, coesão e intenção comunicativa.",
+      "resolution": {
+        "text": "Interpretação envolve construir sentido com base no contexto, coesão e intenção comunicativa. A alternativa B é a única que descreve esse processo inferencial.",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    },
+    "lp-1-q2": {
+      "id": "lp-1-q2",
+      "code": "Q-1043",
+      "topicoId": "lp-1",
+      "banca": "VUNESP",
+      "ano": 2022,
+      "orgaoCargo": "PMESP - Soldado",
+      "difficulty": "Fácil",
+      "enunciado": "Em textos jornalísticos, a manchete costuma sintetizar a informação central. Qual recurso é mais comum nesse gênero?",
+      "alternativas": [
+        { "key": "A", "text": "Rimas e métrica fixa." },
+        { "key": "B", "text": "Linguagem denotativa e objetiva." },
+        { "key": "C", "text": "Narrativa em primeira pessoa poética." },
+        { "key": "D", "text": "Diálogo teatral extenso." },
+        { "key": "E", "text": "Ausência de título." }
+      ],
+      "correta": "B",
+      "gabaritoComentado": "Notícias priorizam clareza, objetividade e linguagem referencial.",
+      "resolution": {
+        "text": "Notícias priorizam clareza, objetividade e linguagem referencial (denotativa). Manchetes sintetizam a informação central do fato."
+      }
+    },
+    "mat-12-q1": {
+      "id": "mat-12-q1",
+      "code": "PM-2021-012",
+      "topicoId": "mat-12",
+      "banca": "VUNESP",
+      "ano": 2021,
+      "orgaoCargo": "PMESP - Soldado",
+      "difficulty": "Médio",
+      "enunciado": "No trapézio ABCD da figura, a base maior AD mede a = 14 cm, a base menor BC mede b = 8 cm e o segmento MN é a base média (paralela às bases). Qual é a medida de MN?",
+      "imageUrl": "/images/questions/trapezio-base-media.png",
+      "alternativas": [
+        { "key": "A", "text": "9 cm" },
+        { "key": "B", "text": "10 cm" },
+        { "key": "C", "text": "11 cm" },
+        { "key": "D", "text": "12 cm" },
+        { "key": "E", "text": "22 cm" }
+      ],
+      "correta": "C",
+      "gabaritoComentado": "A base média MN do trapézio vale a metade da soma das bases: MN = (a + b) / 2 = (14 + 8) / 2 = 11 cm.",
+      "resolution": {
+        "text": "Propriedade da base média do trapézio: MN = (AD + BC) / 2 = (a + b) / 2. Substituindo: (14 + 8) / 2 = 11 cm. Na figura, h₁ e h₂ correspondem às metades da altura quando MN é a mediana.",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    },
+    "geo-3-q1": {
+      "id": "geo-3-q1",
+      "code": "Q-GEO-301",
+      "topicoId": "geo-3",
+      "banca": "FGV",
+      "ano": 2020,
+      "orgaoCargo": "PMESP - Soldado",
+      "difficulty": "Difícil",
+      "enunciado": "Com base no mapa de relevo do Brasil, identifique a região predominantemente ocupada pelo Planalto Central.",
+      "imageUrl": "/images/questions/mapa-relevo-brasil.svg",
+      "alternativas": [
+        { "key": "A", "text": "Região Norte." },
+        { "key": "B", "text": "Região Centro-Oeste." },
+        { "key": "C", "text": "Região Sul." },
+        { "key": "D", "text": "Região Nordeste." },
+        { "key": "E", "text": "Litoral Sudeste." }
+      ],
+      "correta": "B",
+      "gabaritoComentado": "O Planalto Central brasileiro concentra-se especialmente no Centro-Oeste.",
+      "resolution": {
+        "text": "O Planalto Central brasileiro concentra-se especialmente no Centro-Oeste, com relevo de chapadas e altitudes moderadas."
+      }
+    },
+    "hist-off-1-q1": {
+      "id": "hist-off-1-q1",
+      "code": "PM-2023-001",
+      "topicoId": "hist-off-1",
+      "banca": "VUNESP",
+      "ano": 2023,
+      "orgaoCargo": "PMESP - Oficial (Barro Branco)",
+      "difficulty": "Médio",
+      "enunciado": "Sobre as civilizações da Antiguidade Clássica, assinale a alternativa correta quanto à legacy cultural grega.",
+      "alternativas": [
+        { "key": "A", "text": "Rejeição total da filosofia e da ciência." },
+        { "key": "B", "text": "Desenvolvimento da democracia e do pensamento filosófico." },
+        { "key": "C", "text": "Proibição do teatro e da oralidade." },
+        { "key": "D", "text": "Fim do comércio marítimo." },
+        { "key": "E", "text": "Unificação política do Mediterrâneo sob Atenas." }
+      ],
+      "correta": "B",
+      "gabaritoComentado": "A polis grega, especialmente Atenas, influenciou democracia, filosofia e artes.",
+      "resolution": {
+        "text": "A polis grega, especialmente Atenas, influenciou democracia, filosofia e artes — legado central da Antiguidade Clássica.",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    }
+  },
+  "questionIdsByTopico": {
+    "lp-1": ["lp-1-q1", "lp-1-q2"],
+    "mat-12": ["mat-12-q1"],
+    "geo-3": ["geo-3-q1"],
+    "hist-off-1": ["hist-off-1-q1"]
+  },
+  "userStateSchema": {
+    "questions": "code, difficulty, resolution{text?, videoUrl?} — ver meta.questionEntitySchema",
+    "questionAttempts": "Record<questionId, { result: 'correct' | 'wrong', answeredAt: ISO-8601 }>",
+    "studentProfile": "nomeGuerra, avatarDataUrl, customApprovals, stats",
+    "careerSelection": "soldado | oficial",
+    "editalProgress": "topicoId[]"
+  },
+  "testAccount": {
+    "id": "00000000-0000-4000-a000-000000000001",
+    "email": "teste@pmesp.com",
+    "password": "Teste123!",
+    "profile": {
+      "full_name": "SD PM TESTE",
+      "cpf": "52998224725",
+      "role": "student"
+    },
+    "nomeGuerra": "SD PM TESTE",
+    "career": "soldado",
+    "editalProgressSoldado": ["lp-1", "mat-12", "geo-3"],
+    "questionAttempts": {
+      "lp-1-q1": {
+        "result": "correct",
+        "answeredAt": "2026-09-28T14:20:00.000-03:00"
+      },
+      "lp-1-q2": {
+        "result": "wrong",
+        "answeredAt": "2026-09-27T09:45:00.000-03:00"
+      },
+      "mat-12-q1": {
+        "result": "wrong",
+        "answeredAt": "2026-09-26T18:10:00.000-03:00"
+      },
+      "geo-3-q1": {
+        "result": "correct",
+        "answeredAt": "2026-09-24T11:30:00.000-03:00"
+      }
+    }
+  }
+}

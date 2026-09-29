@@ -1,0 +1,402 @@
+{
+  "cargo": "Oficial PMESP (Barro Branco)",
+  "totalDisciplinas": 12,
+  "disciplinas": [
+    {
+      "id": "historia",
+      "nome": "História (Geral e do Brasil)",
+      "icone": "Landmark",
+      "topicos": [
+        {
+          "id": "hist-off-1",
+          "nome": "1. Antiguidade (Oriente Próximo, Grécia, Roma, Povos Antigos e Legado Cultural)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "hist-off-2",
+          "nome": "2. Mundo Medieval (Feudalismo, Reinos Ibéricos, Comércio, Civilização Muçulmana e Bizantina)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "hist-off-3",
+          "nome": "3. Mundo Moderno (Renascença, Reforma, Expansão Marítima, Absolutismo, Iluminismo e Mercantilismo)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "hist-off-4",
+          "nome": "4. Mundo Contemporâneo (Rev. Francesa, Rev. Industrial, Guerras Mundiais, Guerra Fria e Pós-Guerra)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        },
+        {
+          "id": "hist-off-5",
+          "nome": "5. Brasil Colônia (Expansão Portuguesa, Administração, Economia, Sociedade e Movimentos Nativistas)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 28
+        },
+        {
+          "id": "hist-off-6",
+          "nome": "6. Brasil Império (Independência, Primeiro e Segundo Reinado, Período Regencial, Café e Abolição)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 32
+        },
+        {
+          "id": "hist-off-7",
+          "nome": "7. Brasil República (Primeira República, Era Vargas, Ditadura Militar, Redemocratização e Globalização)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 45
+        }
+      ]
+    },
+    {
+      "id": "filosofia",
+      "nome": "Filosofia",
+      "icone": "Brain",
+      "topicos": [
+        {
+          "id": "fil-off-1",
+          "nome": "1. Introdução à Filosofia (História, Ciência, Cultura, Arte, Empirismo/Criticismo, Democracia e Direitos Humanos)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "fil-off-2",
+          "nome": "2. Filosofia e Educação (O Eu Racional, Sujeito Ético, Bioética e a Técnica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "fil-off-3",
+          "nome": "3. Importância da Filosofia para a Cidadania (Homem e Natureza, Concepção Platônica e Rousseau)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        }
+      ]
+    },
+    {
+      "id": "sociologia",
+      "nome": "Sociologia",
+      "icone": "Users",
+      "topicos": [
+        {
+          "id": "soc-off-1",
+          "nome": "1. O Homem na Sociedade e a Sociologia (Diferentes realidades e ser social)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "soc-off-2",
+          "nome": "2. O que permite ao homem viver em sociedade (Grupos sociais, interações e socialização)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        },
+        {
+          "id": "soc-off-3",
+          "nome": "3 e 4. Cultura, Diferenças e Desigualdades Sociais (Etnias, classes, gênero e geração)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "soc-off-5",
+          "nome": "5. A Diversidade Social Brasileira (População, imigração, aculturação e assimilação)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "soc-off-6",
+          "nome": "6. A Importância do Trabalho na Vida Social Brasileira (Divisão social do trabalho e transformações)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "soc-off-7",
+          "nome": "7. Significados da Violência no Brasil (Simpólica, física, psicológica e razões)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "soc-off-8",
+          "nome": "8 e 10. Cidadania e Não Cidadania (Direitos, expansão para grupos especiais e desumanização)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "soc-off-9",
+          "nome": "9. A Organização Política do Estado Brasileiro (Estado, governo e Três Poderes)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 18
+        }
+      ]
+    },
+    {
+      "id": "geografia",
+      "nome": "Geografia (Geral e do Brasil)",
+      "icone": "Globe",
+      "topicos": [
+        {
+          "id": "geo-off-1",
+          "nome": "1. Relação Sociedade-Natureza (Mecanismos da natureza, recursos naturais e preservação)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "geo-off-2",
+          "nome": "2. Estruturação Econômica, Social e Política Mundial (Capitalismo, DIT, urbanização e geopolítica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "geo-off-3",
+          "nome": "3. O Processo de Ocupação e Produção do Espaço Brasileiro (Industrialização, agropecuária e regionalização)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        }
+      ]
+    },
+    {
+      "id": "lingua-portuguesa",
+      "nome": "Língua Portuguesa e Literaturas",
+      "icone": "BookOpen",
+      "topicos": [
+        {
+          "id": "lp-off-1",
+          "nome": "1 e 2. Norma Ortográfica e Morfossintaxe (Classes, derivação, flexão, concordância, regência, crase)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 50
+        },
+        {
+          "id": "lp-off-3",
+          "nome": "3 e 4. Pontuação, Leitura e Interpretação de Texto (Coesão e Coerência)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 45
+        },
+        {
+          "id": "lp-off-5",
+          "nome": "5 e 6. Figuras de Linguagem e Significação das Palavras",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "lp-off-7",
+          "nome": "7 e 8. Literatura Brasileira e Portuguesa (Escolas literárias, autores e obras representativas)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        }
+      ]
+    },
+    {
+      "id": "lingua-estrangeira",
+      "nome": "Língua Estrangeira (Inglês / Espanhol)",
+      "icone": "Languages",
+      "topicos": [
+        {
+          "id": "le-off-1",
+          "nome": "Compreensão de Texto (Propósito, ideias específicas e localização de informações)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "le-off-2",
+          "nome": "Marcadores Textuais, Aspectos Lexicais e Referências Pronominais",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        }
+      ]
+    },
+    {
+      "id": "matematica",
+      "nome": "Matemática",
+      "icone": "Calculator",
+      "topicos": [
+        {
+          "id": "mat-off-1",
+          "nome": "1. Conjuntos Numéricos, PA/PG, Proporção e Juros",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 30
+        },
+        {
+          "id": "mat-off-2",
+          "nome": "2 e 3. Polinômios e Equações Algébricas",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "mat-off-4",
+          "nome": "4 e 5. Análise Combinatória, Probabilidade e Estatística Básica",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "mat-off-6",
+          "nome": "6. Matrizes, Determinantes e Sistemas Lineares",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "mat-off-7",
+          "nome": "7. Geometria Analítica (Reta, Circunferência e Cônicas)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 28
+        },
+        {
+          "id": "mat-off-8",
+          "nome": "8. Funções (Injetora, Composta, Inversa, Quadrática, Exponencial e Logarítmica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "mat-off-9",
+          "nome": "9. Trigonometria (Arcos, Leis dos Senos/Cossenos, Funções e Equações)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "mat-off-10",
+          "nome": "10 e 11. Geometria Plana e Espacial (Prismas, Pirâmides, Corpos Redondos e Áreas/Volumes)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        }
+      ]
+    },
+    {
+      "id": "fisica",
+      "nome": "Física",
+      "icone": "Zap",
+      "topicos": [
+        {
+          "id": "fis-off-1",
+          "nome": "1. Movimentos e Leis de Newton",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "fis-off-2",
+          "nome": "2. Conservação da Energia (Trabalho, Energia Cinética, Potencial e Mecânica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 22
+        },
+        {
+          "id": "fis-off-3",
+          "nome": "3. Termologia (Temperatura, Calor e Dilatação Térmica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "fis-off-4",
+          "nome": "4. Eletricidade (Carga Elétrica, Lei de Coulomb e Corrente Elétrica)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "quimica",
+      "nome": "Química",
+      "icone": "FlaskConical",
+      "topicos": [
+        {
+          "id": "qui-off-1",
+          "nome": "1. Aspectos Macroscópicos da Matéria e Estados Físicos",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 15
+        },
+        {
+          "id": "qui-off-2",
+          "nome": "2 e 3. Átomos, Moléculas, Tabela Periódica e Propriedades Periódicas",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "qui-off-4",
+          "nome": "4 e 5. Ligações Químicas e Funções Inorgânicas (Óxidos, Ácidos, Bases e Sais)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "qui-off-6",
+          "nome": "6. Reações Químicas, Lavoisier e Balanceamento de Equações",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "biologia",
+      "nome": "Biologia",
+      "icone": "Dna",
+      "topicos": [
+        {
+          "id": "bio-off-1",
+          "nome": "1. Célula (Unidade dos seres vivos, diversidade e manutenção da vida)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "bio-off-2",
+          "nome": "2. Continuidades da Vida (Hereditariedade, Mendel, Genética e Teoria da Evolução)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        },
+        {
+          "id": "bio-off-3",
+          "nome": "3. Diversidade dos Seres Vivos (Classificação, Biologia de Plantas e Animais)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        }
+      ]
+    },
+    {
+      "id": "administracao-publica",
+      "nome": "Noções de Administração Pública",
+      "icone": "ShieldAlert",
+      "topicos": [
+        {
+          "id": "adm-off-1",
+          "nome": "1. CF/88 (Direitos Fundamentais, Org. do Estado, Adm. Pública e Segurança Pública)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 45
+        },
+        {
+          "id": "adm-off-2",
+          "nome": "2. Constituição do Estado de SP (Poderes Executivo/Judiciário, Justiça Militar e Segurança)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 35
+        },
+        {
+          "id": "adm-off-3",
+          "nome": "3. Lei de Acesso à Informação (Lei Federal nº 12.527/11 e Decreto Estadual nº 68.155/23)",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        }
+      ]
+    },
+    {
+      "id": "informatica",
+      "nome": "Noções Básicas de Informática",
+      "icone": "Monitor",
+      "topicos": [
+        {
+          "id": "inf-off-1",
+          "nome": "1 a 4. MS-Windows 10, MS-Word 2016, MS-Excel 2016 e MS-PowerPoint 2016",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 40
+        },
+        {
+          "id": "inf-off-5",
+          "nome": "5 e 6. Correio Eletrônico e Internet",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 20
+        },
+        {
+          "id": "inf-off-7",
+          "nome": "7 e 8. Ambientes Google Workspace e Microsoft Teams",
+          "teoriaUrl": "https://youtube.com",
+          "totalQuestoes": 25
+        }
+      ]
+    }
+  ]
+}

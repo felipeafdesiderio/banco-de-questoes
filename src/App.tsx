@@ -4,6 +4,7 @@ import { Footer } from './components/footer/footer'
 import { Header } from './components/header/header'
 import { SupabaseConfigAlert } from './components/supabase-config-alert/supabase-config-alert'
 import { AuthProvider } from './contexts/auth-context'
+import { CareerProvider } from './contexts/career-context'
 import { isSupabaseConfigured } from './lib/supabase'
 import { AppRoutes } from './routes/app-routes'
 
@@ -28,7 +29,7 @@ function AppShell() {
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400">
       <Header />
-      <main className="flex w-full flex-1 flex-col">
+      <main className="flex w-full flex-1 flex-col overflow-x-clip overflow-y-visible">
         <AppRoutes />
       </main>
       <Footer />
@@ -40,7 +41,9 @@ function AppWithRouter() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <AppShell />
+        <CareerProvider>
+          <AppShell />
+        </CareerProvider>
       </AuthProvider>
     </BrowserRouter>
   )

@@ -1,12 +1,14 @@
 import type { ReactNode } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 
+import { useCareer } from '../../contexts/career-context'
 import { useAuth } from '../../hooks/use-auth'
 import type { UserRole } from '../../types/database'
 
 type ProtectedRouteProps = {
   children: ReactNode
   requireAuth?: boolean
+  requireCareer?: boolean
   redirectIfAuth?: boolean
   allowedRoles?: UserRole[]
 }
@@ -14,10 +16,12 @@ type ProtectedRouteProps = {
 export function ProtectedRoute({
   children,
   requireAuth = false,
+  requireCareer = false,
   redirectIfAuth = false,
   allowedRoles,
 }: ProtectedRouteProps) {
   const { user, profile, loading } = useAuth()
+  const { hasSelectedCareer } = useCareer()
   const location = useLocation()
 
   if (loading) {
@@ -33,7 +37,12 @@ export function ProtectedRoute({
   }
 
   if (redirectIfAuth && user) {
-    return <Navigate to="/" replace />
+    const target = hasSelectedCareer ? '/estudar' : '/selecionar-carreira'
+    return <Navigate to={target} replace />
+  }
+
+  if (requireAuth && user && requireCareer && !hasSelectedCareer) {
+    return <Navigate to="/selecionar-carreira" state={{ from: location }} replace />
   }
 
   if (

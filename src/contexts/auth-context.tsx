@@ -9,6 +9,15 @@ import {
 } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
+import {
+  buildMockProfile,
+  getMockTestAccount,
+  isMockAuthEnabled,
+  isMockUserId,
+  mockSignOut,
+  readMockSession,
+  subscribeMockAuth,
+} from '../lib/mock-auth'
 import { supabase } from '../lib/supabase'
 import type { Profile } from '../types/database'
 
@@ -19,12 +28,29 @@ type AuthContextValue = {
   loading: boolean
   signOut: () => Promise<void>
   refreshProfile: () => Promise<void>
+  /** Sincroniza sessão mock do localStorage (após login de preview). */
+  establishMockSession: () => void
 }
 
 export const AuthContext = createContext<AuthContextValue | null>(null)
 
 type AuthProviderProps = {
   children: ReactNode
+}
+
+function applyMockAuthState(
+  setSession: (s: Session | null) => void,
+  setUser: (u: User | null) => void,
+  setProfile: (p: Profile | null) => void,
+) {
+  const session = readMockSession()
+  if (session) {
+    setSession(session)
+    setUser(session.user)
+    setProfile(buildMockProfile(getMockTestAccount()))
+    return true
+  }
+  return false
 }
 
 export function AuthProvider({ children }: AuthProviderProps) {
@@ -38,6 +64,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const refreshProfile = useCallback(async () => {
     if (!user) {
       setProfile(null)
+      return
+    }
+
+    if (isMockUserId(user.id)) {
+      setProfile(buildMockProfile(getMockTestAccount()))
       return
     }
 
@@ -60,6 +91,13 @@ export function AuthProvider({ children }: AuthProviderProps) {
     let mounted = true
 
     async function initAuth() {
+      if (isMockAuthEnabled() && applyMockAuthState(setSession, setUser, setProfile)) {
+        if (mounted) {
+          setLoading(false)
+        }
+        return
+      }
+
       const { data, error } = await supabase.auth.getSession()
 
       if (!mounted) {
@@ -70,8 +108,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
         console.error('[auth] Erro ao obter sessão:', error.message)
       }
 
-      setSession(data.session)
-      setUser(data.session?.user ?? null)
+      if (isMockAuthEnabled() && readMockSession()) {
+        applyMockAuthState(setSession, setUser, setProfile)
+      } else {
+        setSession(data.session)
+        setUser(data.session?.user ?? null)
+      }
       setLoading(false)
     }
 
@@ -80,6 +122,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+      if (isMockAuthEnabled() && readMockSession()) {
+        applyMockAuthState(setSession, setUser, setProfile)
+        setLoading(false)
+        return
+      }
       setSession(nextSession)
       setUser(nextSession?.user ?? null)
       setLoading(false)
@@ -89,6 +136,22 @@ export function AuthProvider({ children }: AuthProviderProps) {
       mounted = false
       subscription.unsubscribe()
     }
+  }, [])
+
+  useEffect(() => {
+    if (!isMockAuthEnabled()) {
+      return
+    }
+    return subscribeMockAuth(() => {
+      if (applyMockAuthState(setSession, setUser, setProfile)) {
+        setLoading(false)
+        return
+      }
+      setSession(null)
+      setUser(null)
+      setProfile(null)
+      setLoading(false)
+    })
   }, [])
 
   useEffect(() => {
@@ -113,6 +176,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       '/complete-profile',
       '/forgot-password',
       '/reset-password',
+      '/selecionar-carreira',
     ]
 
     if (!profile.cpf && !cpfExemptRoutes.includes(location.pathname)) {
@@ -120,7 +184,22 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   }, [loading, user, profile, location.pathname, navigate])
 
+  const establishMockSession = useCallback(() => {
+    if (applyMockAuthState(setSession, setUser, setProfile)) {
+      setLoading(false)
+    }
+  }, [])
+
   const signOut = useCallback(async () => {
+    if (isMockUserId(user?.id)) {
+      mockSignOut()
+      setSession(null)
+      setUser(null)
+      setProfile(null)
+      navigate('/')
+      return
+    }
+
     const { error } = await supabase.auth.signOut()
 
     if (error) {
@@ -130,7 +209,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     setProfile(null)
     navigate('/')
-  }, [navigate])
+  }, [navigate, user?.id])
 
   const value = useMemo(
     () => ({
@@ -140,8 +219,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
       loading,
       signOut,
       refreshProfile,
+      establishMockSession,
     }),
-    [user, session, profile, loading, signOut, refreshProfile],
+    [user, session, profile, loading, signOut, refreshProfile, establishMockSession],
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
